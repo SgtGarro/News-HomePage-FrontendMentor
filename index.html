@@ -10,70 +10,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/mobile.css">
   <title>Frontend Mentor | News homepage</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  Home
+  <!-- Home
   New
   Popular
   Trending
-  Categories
+  Categories -->
   <main>
-    <section>
-      <div>
+    <section class="hero">
+      <div class="container hero-container">
         <img src="/assets/images/image-web-3-mobile.jpg" alt="Web image">
-        <div>
-          <h1>The Bright Future of Web 3.0?</h1>
+        <div class="hero-content">
+          <h1 class="hero-content__title">The Bright Future of Web 3.0?</h1>
           <div>
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-            <a href="#">Read more</a>
+            <p class="hero-content__desc">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <a href="#" class="hero-content__button">Read more</a>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <h2>New</h2>
-      <article>
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </article>
-      <article>
-        <h3>The Downsides of AI Artistry</h3>
-        <p>What are the possible adverse effects of on-demand AI image generation?</p>
-      </article>
-      <article>
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </article>
+    <section class="news">
+      <div class="container news-container">
+        <h2 class="news__title">New</h2>
+        <article class="news-article">
+          <h3 class="news-article__title">Hydrogen VS Electric Cars</h3>
+          <p class="news-article__desc">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="news-article">
+          <h3 class="news-article__title">The Downsides of AI Artistry</h3>
+          <p class="news-article__desc">What are the possible adverse effects of on-demand AI image  generation?</p>
+        </article>
+        <article class="news-article">
+          <h3 class="news-article__title">Is VC Funding Drying Up?</h3>
+          <p class="news-article__desc">Private funding by VC firms is down 50% YOY. We take a look  at what that means.</p>
+        </article>
+      </div>
     </section>
-    <section>
-      <div>
+    <section class="articles">
+      <div class="container articles-container">
         <article>
           <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PCs">
-          <div>
-            <h2>01</h2>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old PCs are given modern upgrades?</p>
+          <div class="article-content">
+            <h2 class="article-content__number">01</h2>
+            <h4 class="article-content__title">Reviving Retro PCs</h4>
+            <p class="article-content__desc">What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
         <article>
           <img src="/assets/images/image-top-laptops.jpg" alt="Top Laptops">
-          <div>
-            <h2>02</h2>
-            <h4>Top 10 Laptops of 2022</h4>
-            <p>Our best picks for various needs and budgets.</p>
+          <div class="article-content">
+            <h2 class="article-content__number">02</h2>
+            <h4 class="article-content__title">Top 10 Laptops of 2022</h4>
+            <p class="article-content__desc">Our best picks for various needs and budgets.</p>
           </div>
         </article>
         <article>
           <img src="/assets/images/image-gaming-growth.jpg" alt="Gaming">
-          <div>
-            <h2>03</h2>
-            <h4>The Growth of Gaming</h4>
-            <p>How the pandemic has sparked fresh opportunities.</p>
+          <div class="article-content">
+            <h2 class="article-content__number">03</h2>
+            <h4 class="article-content__title">The Growth of Gaming</h4>
+            <p class="article-content__desc">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </article>
       </div>

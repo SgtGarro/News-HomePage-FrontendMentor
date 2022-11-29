@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 90%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: grid;
+  row-gap: 20px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.hero-content .hero-content__title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+.hero-content .hero-content__desc {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+.hero-content .hero-content__button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: var(--soft-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--off-white);
+}
+
+.news {
+  margin-top: 60px;
+}
+.news-container {
+  padding: 20px;
+  background-color: var(--very-dark-blue);
+}
+.news__title {
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  line-height: normal;
+  font-weight: 700;
+  color: var(--soft-orange);
+}
+.news-article {
+  margin-top: 30px;
+}
+.news-article:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+.news-article__title {
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: 700;
+  color: var(--off-white);
+}
+.news-article__desc {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.articles {
+  margin-top: 60px;
+}
+.articles-container {
+  display: grid;
+  gap: 30px;
+  grid-auto-rows: auto;
+}
+.articles-container article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 100%;
+  gap: 30px;
+}
+.articles article img {
+  height: 100%;
+}
+.article-content {
+  align-self: center;
+}
+.article-content__number {
+  font-size: 3.2rem;
+  line-height: normal;
+  font-weight: 700;
+  color: var(--grayish-blue);
+}
+.article-content__title {
+  margin-top: 10px;
+  font-size: 1.7rem;
+  line-height: normal;
+  font-weight: 800;
+}
+.article-content__desc {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
