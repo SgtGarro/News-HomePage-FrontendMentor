@@ -23,6 +23,9 @@ img {
   min-width: 320px;
   margin: 0 auto;
 }
+.desktop-image {
+  display: none;
+}
 
 .hero-container {
   display: grid;
