@@ -48,14 +48,14 @@ header {
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("/assets/images/icon-menu.svg");
+  background-image: url("../assets/images/icon-menu.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .menu-icon-close {
-  background-image: url("/assets/images/icon-menu-close.svg");
+  background-image: url("../assets/images/icon-menu-close.svg");
   margin-left: auto;
 }
 .nav-menu {
