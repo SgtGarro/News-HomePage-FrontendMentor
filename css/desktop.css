@@ -5,7 +5,6 @@ main {
     "hero hero news"
     "arti arti arti";
   column-gap: 30px;
-
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -20,12 +19,41 @@ main {
 .desktop-image {
   display: block;
 }
+.menu-icon,
+.menu-icon-close {
+  display: none;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+}
+.nav-menu {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
+}
+.nav-menu-list {
+  flex-direction: row;
+  margin: 0;
+}
+.nav-menu--link {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+.menu-icon {
+  display: none;
+}
 
 .hero {
   grid-area: hero;
 }
 .hero-container {
-  grid-template-rows: 3fr 2fr;
+  grid-template-rows: 1fr auto;
   height: 100%;
 }
 .hero-container img {

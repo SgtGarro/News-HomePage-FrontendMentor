@@ -27,6 +27,73 @@ img {
   display: none;
 }
 
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: var(--off-white);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  height: fit-content;
+}
+.menu-icon,
+.menu-icon-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/images/icon-menu.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.menu-icon-close {
+  background-image: url("/assets/images/icon-menu-close.svg");
+  margin-left: auto;
+}
+.nav-menu {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  background-color: white;
+  padding: 30px;
+  transition: all ease-out 0.3s;
+}
+.nav-menu-visible {
+  display: block;
+  right: 0;
+}
+.nav-menu-list {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-top: 60px;
+  list-style: none;
+}
+.nav-menu--link {
+  font-size: 2rem;
+}
+.nav-menu--link > a {
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+.nav-menu--link > a:hover {
+  color: var(--soft-red);
+}
+
+main {
+  padding-top: 80px;
+}
 .hero-container {
   display: grid;
   row-gap: 20px;
